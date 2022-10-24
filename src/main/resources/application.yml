@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.56.121/dailyhub?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  freemarker:
+    suffix: .ftl
+    settings:
+      classic_compatible: true
+  redis:
+    database: 0
+    port: 6379
+    password: root
+    host: 192.168.56.103
+
+  elasticsearch:
+    uris: 192.168.56.121:9200
+    username:
+    password:
+wechat:
+  mpAppId: wx9bad819769a50d69
+  mpAppSecret: 93278989680fc422663a872add6afeb4
+  token: root
+server:
+  domain: http://p7yc6h.natappfree.cc
